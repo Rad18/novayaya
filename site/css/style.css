@@ -8036,14 +8036,16 @@ header {
     position: relative;
     background-position: left center;
     background-repeat: no-repeat;
-    box-shadow: inset 0px 57px 169px -64px #333; }
+    box-shadow: inset 0px 57px 169px -64px #333;
+    height: 750px; }
   .results .right__column {
     width: 50%;
     float: right;
     padding: 200px 70px 125px 98px;
     background-color: #EBEBEB;
     position: relative;
-    box-shadow: inset -85px 69px 244px -95px #333; }
+    box-shadow: inset -85px 69px 244px -95px #333;
+    height: 750px; }
 
 .efir {
   background-color: #E9E9E9;
@@ -8061,10 +8063,10 @@ header {
   .efir .block-pink {
     background-color: #fa6683;
     color: #fff;
-    padding: 46px 65px;
+    padding: 62px 75px;
     width: 738px;
-    margin-left: -196px;
-    margin-top: 95px; }
+    margin-left: -144px;
+    margin-top: 117px; }
     .efir .block-pink h3 {
       font-size: 48px;
       font-weight: bold; }
@@ -8091,12 +8093,13 @@ header {
 .intensive .present {
   width: 800px;
   position: absolute;
-  left: -50%;
+  left: -40%;
   font-size: 23px;
   bottom: 6%; }
 
 .intensive .right__column, .intensive .left_column {
-  padding: 180px 70px 270px 98px; }
+  padding: 180px 70px 270px 98px;
+  height: 1000px; }
 
 .intensive h4 {
   font-size: 30px;
@@ -8194,3 +8197,12 @@ header {
     width: 100%;
     background-color: #fff;
     padding-bottom: 40px; }
+  .programm h2 {
+    font-size: 48px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 50px;
+    text-align: center;
+    position: absolute;
+    left: 28%;
+    top: 60px;
+    z-index: 999; }
