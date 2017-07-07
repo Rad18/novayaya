@@ -7811,11 +7811,11 @@ button {
 li {
   list-style-type: none; }
 
-a {
+a, a:visiter, a:active {
   cursor: pointer;
   text-decoration: none;
   color: #fff; }
-  a:before {
+  a:before, a:visiter:before, a:active:before {
     text-decoration: none; }
 
 a:active, a:hover {
@@ -7825,6 +7825,33 @@ a:active, a:hover {
 
 img {
   cursor: pointer; }
+
+.modal-header {
+  padding: 6px; }
+
+.modal-content {
+  width: 400px;
+  padding: 0;
+  overflow: hidden; }
+
+.modal-body {
+  padding: 0; }
+
+.close {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-right: 5px;
+  opacity: 1;
+  color: #fff; }
+
+.btn {
+  outline: none;
+  text-decoration: none; }
+
+.send {
+  text-decoration: none;
+  outline: none;
+  color: #ff6666 !important; }
 
 #upbutton {
   background: url("../images/arrow-up.png") no-repeat 0 0;
@@ -7893,7 +7920,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 900px; }
   header .pinky {
     color: #ff6666 !important; }
   header h5 {
@@ -8005,7 +8033,7 @@ header {
   position: relative;
   overflow: hidden; }
   .results h2 {
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Lobster', cursive;
     margin-bottom: 50px;
     text-align: center;
@@ -8029,10 +8057,10 @@ header {
     position: absolute;
     border: 2px dotted #ff6666;
     bottom: -50px;
-    right: 130px;
+    right: 84px;
     background-color: #fff; }
   .results h3 {
-    font-size: 48px;
+    font-size: 40px;
     color: #ff6666;
     text-align: left;
     margin-bottom: 10px; }
@@ -8121,7 +8149,7 @@ header {
     .intensive .present p {
       margin-bottom: 0; }
   .intensive .right__column, .intensive .left_column {
-    padding: 180px 70px 270px 98px;
+    padding: 180px 70px 270px 28px;
     height: 1000px; }
   .intensive h4 {
     font-size: 30px;
@@ -8362,12 +8390,32 @@ footer {
     color: #fff; }
   footer .col-span {
     color: #66ccff;
-    margin-left: 25px;
+    margin-left: 20px;
     text-decoration: underline; }
   footer a {
     color: #66ccff; }
   footer .copy {
     margin-bottom: 30px; }
+
+@media (max-width: 1500px) {
+  .programm h3 {
+    font-size: 24px; }
+  .programm h3:before {
+    width: 337px; }
+  .results .images-w {
+    width: 216px;
+    height: 221px; }
+  .results .left_column {
+    height: 811px; }
+  .results .right_column {
+    height: 811px; } }
+
+@media (max-width: 1350px) {
+  .results .images-w {
+    width: 203px;
+    height: 219px; }
+  .results .number {
+    right: 75px; } }
 
 @media (max-width: 1200px) {
   header .navbar-nav {
